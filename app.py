@@ -1,3 +1,4 @@
+"""Criação de dashboard web interativo para análise de dados de vendas de carros"""
 import pandas as pd
 import plotly.express as px
 import streamlit as st
@@ -10,3 +11,7 @@ if hist_button:
     st.write('Creating a Histogram...')
     fig = px.histogram(car_data, x="odometer")
     st.plotly_chart(fig, use_container_width=True)
+
+build_histogram = st.checkbox('Create a histogram')
+if build_histogram:
+    st.write('Building histogram for odometer column')
