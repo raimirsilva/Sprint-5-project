@@ -1,10 +1,12 @@
 """Criação de dashboard web interativo para análise de dados de vendas de carros"""
+from pathlib import Path
+
 import pandas as pd
 import plotly.express as px
 import streamlit as st
 
-car_data = pd.read_csv(
-    '/Users/raimirsilva/Documents/GitHub/Sprints Projects/Sprint-5-project/vehicles_us.csv')
+data_path = Path(__file__).resolve().parent / "vehicles_us.csv"
+car_data = pd.read_csv(data_path)
 hist_button = st.button('Create a Histogram')
 
 if hist_button:
