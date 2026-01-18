@@ -17,6 +17,8 @@ if hist_button:
 build_histogram = st.checkbox('Create a histogram')
 if build_histogram:
     st.write('Building histogram for odometer column')
+    fig = px.histogram(car_data, x="odometer")
+    st.plotly_chart(fig, use_container_width=True)
 
 build_scatter = st.button('Create a scatter plot')
 if build_scatter:
