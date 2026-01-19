@@ -1,5 +1,7 @@
 {
     "autopep8.args": [
-        "--max-line-length=88 "
-    ]
+        "--max-line-length=70"
+    ],
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true
 }
