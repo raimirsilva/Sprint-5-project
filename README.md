@@ -2,6 +2,9 @@
 ## Dashboard web interativo para análise de dados de vendas de carros
 ### Painel de controle onde usuários podem explorar informações sobre veículos de forma visual e interativa.
 
+Aplicativo web desenvolvido com Streamlit para análise de dados de vendas de carros:
+[Acesse o dashboard aqui](https://sprint-5-project-8vqs.onrender.com)
+
 Funcionalidades principais:
 
 1. Visualização de dados:
