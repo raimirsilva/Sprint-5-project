@@ -15,7 +15,7 @@ car_data["model_year"] = pd.to_numeric(car_data["model_year"], errors="coerce")
 car_data["odometer"] = pd.to_numeric(car_data["odometer"], errors="coerce")
 car_data["price"] = pd.to_numeric(car_data["price"], errors="coerce")
 
-st.subheader('Entenda o que está buscando')
+st.subheader('Personalize sua análise')
 st.caption('Preço vs. quilometragem com filtros por condição e combustível')
 
 # Remoção de ausentes e duplicados, trazendo listas ordenadas e de condições válidas para opções de combustíveis e condições do veículo
@@ -55,7 +55,7 @@ scatter_fig = px.scatter(
 st.plotly_chart(scatter_fig, width=1150, height=650,
                 key="scatter_price_odometer")
 
-st.subheader('Bons negócios')
+st.subheader('Identifique bons negócios')
 st.caption('Faixa de quilometragem por faixa de preço')
 
 # Definição de maior preço válido e criação de faixas/labels de preço para categorizar os carros
@@ -117,7 +117,7 @@ age_fig = px.line(
 )
 st.plotly_chart(age_fig, width=1150, height=650, key="depreciation_by_age")
 
-st.subheader('Híbridos valem o hype?')
+st.subheader('Analise o custo-benefício')
 st.caption('Preço por combustível (gas/diesel/hybrid)')
 
 # Filtragem de combustível/preço válidos e criação de box plot do preço por tipo de combustível
