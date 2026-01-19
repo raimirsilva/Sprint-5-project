@@ -5,6 +5,8 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
+st.header('Análise de Dados de Vendas de Carros nos EUA')
+
 data_path = Path(__file__).resolve().parent / "vehicles_us.csv"
 car_data = pd.read_csv(data_path)
 hist_button = st.button('Create a Histogram')
