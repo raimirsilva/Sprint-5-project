@@ -1,4 +1,4 @@
-# Sprint-5-project
+# Vehicle sales in the US
 ## Dashboard web interativo para análise de dados de vendas de carros
 ### Painel de controle onde usuários podem explorar informações sobre veículos de forma visual e interativa.
 
